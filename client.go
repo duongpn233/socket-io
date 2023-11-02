@@ -2,14 +2,13 @@ package socketio
 
 import (
 	"errors"
-	"fmt"
 	"net/url"
 	"path"
 	"strings"
 
 	"github.com/googollee/go-socket.io/engineio"
 	"github.com/googollee/go-socket.io/engineio/transport"
-	"github.com/googollee/go-socket.io/engineio/transport/polling"
+	"github.com/googollee/go-socket.io/engineio/transport/websocket"
 	"github.com/googollee/go-socket.io/logger"
 	"github.com/googollee/go-socket.io/parser"
 )
@@ -48,14 +47,12 @@ func NewClient(uri string, opts *engineio.Options) (*Client, error) {
 		opts:      opts,
 	}
 
-	fmt.Println(client)
-
 	return client, nil
 }
 
 func (s *Client) Connect() error {
 	dialer := engineio.Dialer{
-		Transports: []transport.Transport{polling.Default},
+		Transports: []transport.Transport{websocket.Default},
 	}
 	enginioCon, err := dialer.Dial(s.url, nil)
 	if err != nil {
