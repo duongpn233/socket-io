@@ -6,11 +6,11 @@ import (
 	"path"
 	"strings"
 
-	"github.com/googollee/go-socket.io/engineio"
-	"github.com/googollee/go-socket.io/engineio/transport"
-	"github.com/googollee/go-socket.io/engineio/transport/websocket"
-	"github.com/googollee/go-socket.io/logger"
-	"github.com/googollee/go-socket.io/parser"
+	"github.com/duongpn233/socket-io/engineio"
+	"github.com/duongpn233/socket-io/engineio/transport"
+	"github.com/duongpn233/socket-io/engineio/transport/websocket"
+	"github.com/duongpn233/socket-io/logger"
+	"github.com/duongpn233/socket-io/parser"
 )
 
 // Server is a go-socket.io server.

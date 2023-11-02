@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/googollee/go-socket.io/logger"
+	"github.com/duongpn233/socket-io/logger"
 	"github.com/gorilla/websocket"
 
-	"github.com/googollee/go-socket.io/engineio/frame"
-	"github.com/googollee/go-socket.io/engineio/transport"
+	"github.com/duongpn233/socket-io/engineio/frame"
+	"github.com/duongpn233/socket-io/engineio/transport"
 )
 
 type wrapper struct {

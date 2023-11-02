@@ -3,8 +3,8 @@ package socketio
 import (
 	"log"
 
-	"github.com/googollee/go-socket.io/logger"
-	"github.com/googollee/go-socket.io/parser"
+	"github.com/duongpn233/socket-io/logger"
+	"github.com/duongpn233/socket-io/parser"
 )
 
 var emtpyFH = newAckFunc(func() {})

@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/googollee/go-socket.io/engineio/payload"
-	"github.com/googollee/go-socket.io/logger"
+	"github.com/duongpn233/socket-io/engineio/payload"
+	"github.com/duongpn233/socket-io/logger"
 )
 
 type serverConn struct {

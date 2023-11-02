@@ -3,8 +3,8 @@ package packet
 import (
 	"io"
 
-	"github.com/googollee/go-socket.io/engineio/frame"
-	"github.com/googollee/go-socket.io/logger"
+	"github.com/duongpn233/socket-io/engineio/frame"
+	"github.com/duongpn233/socket-io/logger"
 )
 
 // FrameWriter is the writer which supports framing.
